@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+
+.container {
+	max-width: 1110px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+.main__dew-text {
+	text-align: center;
+	margin-top: 250px;
+	background: url(pexels-photo-4951277.jpeg);
+	font-size: 150px;
+	color: transparent;
+	-webkit-background-clip: text;
+	animation: animate 10s infinite linear;
+	font-family: 'Sigmar One' , cursive;
+}
+
+@keyframes animate {
+	from {
+		background-position: 0 0 ;
+	}
+	to {
+		background-position: 100% 100% ;
+	}
+}
+
+.main_content {
+	display: flex;
+}
+.main__content-text {
+	font-size: 17px;
+	text-align: justify;
+	width: 50%;
+	margin-left: 30px;
+}
+
+
+
+@media (max-width: 380px) {
+	.main__dew-text {
+		font-size: 55px;
+		margin-top: 50px;
+	}
+
+	.main__content-text {
+		margin-left: 12px;
+		font-size: 12px;
+	}
+}
